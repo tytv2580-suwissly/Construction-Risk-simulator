@@ -22,7 +22,7 @@ st.markdown("모델과 항목을 선택하고 응답값을 입력하면, 기준 
 DEFAULT_EXCEL_PATH = "시뮬레이터 (3 모델 모델별_기준값_산정근거_상세설명 포함) - 복사본.xlsx"
 
 try:
-    df_main = pd.read_excel(DEFAULT_EXCEL_PATH, sheet_name="시뮬레이터")
+    df_main = pd.read_excel(DEFAULT_EXCEL_PATH, sheet_name="simulator")
     df_ref = pd.read_excel(DEFAULT_EXCEL_PATH, sheet_name="보강안 및 근거")
 except Exception as e:
     st.error(f"엑셀 파일을 불러오는 데 실패했습니다: {e}")
